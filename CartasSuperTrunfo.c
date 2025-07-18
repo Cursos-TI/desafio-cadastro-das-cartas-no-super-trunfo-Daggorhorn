@@ -21,23 +21,23 @@ int main() {
     double PIB2 = 73000000000; // PIB de 73 bilhões de reais.
     int Pontos2 = 28; // Número de pontos turísticos.
 
-    printf("Código da Carta: %s\n", Carta);
-    printf("Nome do Estado: %s\n", Estado);
-    printf("Nome da Cidade: %s\n", Cidade);
-    printf("População: %.0f\n", População);
-    printf("Área(km²): %.1f\n", Área);
-    printf("PIB: %.0f\n", PIB);
-    printf("Número de Pontos Turísticos: %d\n", Pontos);
+    printf("Código da Carta: %s\n", Carta); // Exibe o código da carta.(função %s para formatar a string).
+    printf("Nome do Estado: %s\n", Estado); // Exibe o nome do estado. (função %s para formatar a string).
+    printf("Nome da Cidade: %s\n", Cidade); // Exibe o nome da cidade. (função %s para formatar a string).
+    printf("População: %.0f\n", População); // Exibe a população. (função %.0f para formatar o número com zero casas decimais).
+    printf("Área(km²): %.1f\n", Área); // Exibe a área em km². (função %.1f para formatar o número com uma casa decimal).
+    printf("PIB: %.0f\n", PIB); // Exibe o PIB. (função %.0f para formatar o número com zero casas decimais).
+    printf("Número de Pontos Turísticos: %d\n", Pontos); // Exibe o número de pontos turísticos. (função %d para formatar o número inteiro).
 
-    printf("\n");
+    printf("\n"); // Linha em branco para separar as cartas.
 
-    printf("Código da Carta: %s\n", Carta2);
-    printf("Nome do Estado: %s\n", Estado2);
-    printf("Nome da Cidade: %s\n", Cidade2);
-    printf("População: %.0f\n", População2);
-    printf("Área(km²): %.1f\n", Área2);
-    printf("PIB: %.0f\n", PIB2);
-    printf("Número de Pontos Turísticos: %d\n", Pontos2);
-    
+    printf("Código da Carta: %s\n", Carta2); // Exibe o código da segunda carta. 
+    printf("Nome do Estado: %s\n", Estado2); // Exibe o nome do estado da segunda carta.
+    printf("Nome da Cidade: %s\n", Cidade2); // Exibe o nome da cidade da segunda carta.
+    printf("População: %.0f\n", População2); // Exibe a população da segunda carta.
+    printf("Área(km²): %.1f\n", Área2); // Exibe a área em km² da segunda carta.
+    printf("PIB: %.0f\n", PIB2); // Exibe o PIB da segunda carta.
+    printf("Número de Pontos Turísticos: %d\n", Pontos2); // Exibe o número de pontos turísticos da segunda carta.
+
     return 0;
 }
