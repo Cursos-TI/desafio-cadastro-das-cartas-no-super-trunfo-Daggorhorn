@@ -10,6 +10,8 @@ int main() {
     float Área = 496.8; // Área em km².
     double PIB = 81560000000; // PIB de 81 bilhões e 560 milhões de reais.
     int Pontos = 32; // Número de pontos turísticos.
+    float DensidadePopulacional = População / Área; // Cálculo da densidade populacional.
+    float PIBPerCapita = PIB / População; // Cálculo do PIB per capita
 
 
 // 2ª Carta
@@ -20,6 +22,8 @@ int main() {
     float Área2 = 313.8; // Área em km².
     double PIB2 = 73000000000; // PIB de 73 bilhões de reais.
     int Pontos2 = 28; // Número de pontos turísticos.
+    float DensidadePopulacional2 = População2 / Área2; // Cálculo da densidade populacional.
+    float PIBPerCapita2 = PIB2 / População2; // Cálculo do PIB per capita
 
     printf("Código da Carta: %s\n", Carta); // Exibe o código da carta.(função %s para formatar a string).
     printf("Nome do Estado: %s\n", Estado); // Exibe o nome do estado. (função %s para formatar a string).
@@ -28,6 +32,8 @@ int main() {
     printf("Área(km²): %.1f\n", Área); // Exibe a área em km². (função %.1f para formatar o número com uma casa decimal).
     printf("PIB: %.0f\n", PIB); // Exibe o PIB. (função %.0f para formatar o número com zero casas decimais).
     printf("Número de Pontos Turísticos: %d\n", Pontos); // Exibe o número de pontos turísticos. (função %d para formatar o número inteiro).
+    printf("Densidade Populacional: %.2f habitantes/km²\n", DensidadePopulacional); // Exibe a densidade populacional com duas casas decimais.
+    printf("PIB Per Capita: %.2f reais\n", PIBPerCapita); // Exibe o PIB per capita com duas casas decimais.
 
     printf("\n"); // Linha em branco para separar as cartas.
 
@@ -38,6 +44,8 @@ int main() {
     printf("Área(km²): %.1f\n", Área2); // Exibe a área em km² da segunda carta.
     printf("PIB: %.0f\n", PIB2); // Exibe o PIB da segunda carta.
     printf("Número de Pontos Turísticos: %d\n", Pontos2); // Exibe o número de pontos turísticos da segunda carta.
+    printf("Densidade Populacional2: %.2f habitantes/km²\n", DensidadePopulacional2); // Exibe a densidade populacional com duas casas decimais.
+    printf("PIB Per Capita2: %.2f reais\n", PIBPerCapita2); // Exibe o PIB per capita com duas casas decimais.
 
     return 0;
 }
