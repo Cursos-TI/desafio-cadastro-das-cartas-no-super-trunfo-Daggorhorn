@@ -4,9 +4,9 @@ int main() {
     
 // 1ª Carta
     char Carta[3]; //"B01" Código da carta, utilizando a inicial B para definir o país.
-    printf("Digite um caractere: ");
-    scanf(" %3s", &Carta); // O %3s limita a leitura a 3 caracteres, evitando overflow.
-    
+    printf("Digite o Codigo da Carta: ");
+    scanf(" %3s", Carta); // O %3s limita a leitura a 3 caracteres, evitando overflow.
+
     char Estado[20]; //"Rio Grande do Sul" Nome do estado.
     printf("Digite o nome do estado: "); 
     scanf(" %[^\n]", Estado); // %[^\n] permite ler uma string com espaços até encontrar uma nova linha.
@@ -23,7 +23,7 @@ int main() {
     printf("Digite a área (km²): ");
     scanf("%f", &Área); // %f para ler um float.
    
-    double PIB; //81560000000.0 PIB em reais.
+    double PIB; // 81560000000.0 PIB em reais.
     printf("Digite o PIB: ");
     scanf("%lf", &PIB); // %lf para ler um double.
     
@@ -38,7 +38,7 @@ int main() {
     printf("PIB Per Capita da primeira carta: %.2f reais\n", PIBPerCapita);
 
     double DPI = (1.0 / Densidade_Populacional); // Cálculo do DPI (Densidade Populacional Inversa).
-    printf("DPI da primeira carta: %.2f\n", DPI);
+    printf("DPI da primeira carta: %.6f\n", DPI);
 
     double SuperPoder = População + Área + PIB + Pontos + PIBPerCapita + DPI; // Super poder da primeira carta.
     printf("Super Poder da primeira carta: %.2f\n", SuperPoder);
@@ -81,7 +81,7 @@ int main() {
     printf("PIB Per Capita da segunda carta: %.2f reais\n", PIBPerCapita2);
 
     double DPI2 = (1.0 / Densidade_Populacional2); // Cálculo do DPI (Densidade Populacional Inversa).
-    printf("DPI da segunda carta: %.2f\n", DPI2);
+    printf("DPI da segunda carta: %.6f\n", DPI2);
 
     double SuperPoder2 = População2 + Área2 + PIB2 + Pontos2 + PIBPerCapita2 + DPI2; // Super poder da segunda carta.
     printf("Super Poder da segunda carta: %.2f\n", SuperPoder2);
@@ -98,4 +98,5 @@ int main() {
     printf("Super Poder da carta 1 (%.2f) é maior que o da carta 2 (%.2f) = %d\n", SuperPoder, SuperPoder2, (SuperPoder > SuperPoder2));
 
     return 0;
+
 }
