@@ -3,9 +3,9 @@
 int main() {
     
 // 1ª Carta
-    char Carta[3]; //"B01" Código da carta, utilizando a inicial B para definir o país.
+    char Carta[4]; //"B01" Código da carta, utilizando a inicial B para definir o país.
     printf("Digite o Codigo da Carta: ");
-    scanf(" %3s", Carta); // O %3s limita a leitura a 3 caracteres, evitando overflow.
+    scanf(" %4s", Carta); // O %4s limita a leitura a 4 caracteres, evitando overflow.
 
     char Estado[20]; //"Rio Grande do Sul" Nome do estado.
     printf("Digite o nome do estado: "); 
@@ -40,15 +40,15 @@ int main() {
     double DPI = (1.0 / Densidade_Populacional); // Cálculo do DPI (Densidade Populacional Inversa).
     printf("DPI da primeira carta: %.6f\n", DPI);
 
-    double SuperPoder = População + Área + PIB + Pontos + PIBPerCapita + DPI; // Super poder da primeira carta.
+    double SuperPoder = População + Área + PIB + Pontos + PIBPerCapita + Densidade_Populacional + DPI; // Super poder da primeira carta.
     printf("Super Poder da primeira carta: %.2f\n", SuperPoder);
 
     printf("\n"); // Linha em branco para separar as cartas.
 
 // 2ª Carta
-    char Carta2[3]; //"B02" Código da carta, utilizando a inicial B para definir o país.
+    char Carta2[4]; //"B02" Código da carta, utilizando a inicial B para definir o país.
     printf("Digite o código da segunda carta: ");
-    scanf(" %3s", Carta2); // O %3s limita a leitura a 3 caracteres, evitando overflow.
+    scanf(" %4s", Carta2); // O %4s limita a leitura a 4 caracteres, evitando overflow.
 
     char Estado2[20]; //"Ceará" Nome do estado.
     printf("Digite o nome do estado da segunda carta: ");
@@ -66,7 +66,7 @@ int main() {
     printf("Digite a área (km²) da segunda carta: ");
     scanf("%f", &Área2); // %f para ler um float.
 
-    double PIB2; //73000000000.0 PIB em reais.
+    double PIB2; // PIB em reais.
     printf("Digite o PIB da segunda carta: ");
     scanf("%lf", &PIB2); // %lf para ler um double.
 
@@ -83,7 +83,7 @@ int main() {
     double DPI2 = (1.0 / Densidade_Populacional2); // Cálculo do DPI (Densidade Populacional Inversa).
     printf("DPI da segunda carta: %.6f\n", DPI2);
 
-    double SuperPoder2 = População2 + Área2 + PIB2 + Pontos2 + PIBPerCapita2 + DPI2; // Super poder da segunda carta.
+    double SuperPoder2 = População2 + Área2 + PIB2 + Pontos2 + PIBPerCapita2 + Densidade_Populacional2 + DPI2; // Super poder da segunda carta.
     printf("Super Poder da segunda carta: %.2f\n", SuperPoder2);
 
     printf("\n");
